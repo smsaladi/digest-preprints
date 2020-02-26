@@ -1,4 +1,3 @@
-243304809
 [![Build Status](https://travis-ci.org/smsaladi/codonw-slim.svg?branch=master)](https://travis-ci.org/smsaladi/digest-preprints)
 [![DOI](https://data.caltech.edu/badge/243304809.svg)](https://data.caltech.edu/badge/latestdoi/243304809)
 
@@ -19,33 +18,42 @@ This project is under active development. Please share your input via issues.
 
 1. Routes to that resolve a given doi, e.g.
 
+```text
 https://{base_url}/{doi_prefix}/{doi_suffix}{preprint_server_versioning}
 https://{base_url}/{doi_prefix}/{doi_suffix}{preprint_server_versioning}
+```
 
 2. into json-parsable bits of a preprint
 
+```text
 {1}/{metadata}
 {1}/{abstract}
 {1}/{body}
 {1}/{references}
 {1}/{figures}
+```
 
 3. and even more granular bits
 
+```text
 {1}/{paragraph}/{paragraphN}
 {1}/{section}/{sectionN}
+```
 
 4. With formatting specifiers, where relevant, e.g.
 
+```text
 {1}/{body}/{paragraphN}?html=1
 {1}/{body}/{figures}?format=url (default url=1) vs. {1}/{body}/{figures}?format=base64
+```
 
 5. Resolves to other interfaces (e.g. cantalope iiif server) where relevant, e.g.
 
+```text
 {1}/figures/iiif/{iiif_url_structure}
 {1}/pdf
 {1}/pdf/iiif/{iiif_url_structure}
-
+```
 
 ## Responses
 
