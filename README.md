@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/smsaladi/codonw-slim.svg?branch=master)](https://travis-ci.org/smsaladi/digest-preprints)
+[![Build Status](https://travis-ci.org/smsaladi/digest-preprints.svg?branch=master)](https://travis-ci.org/smsaladi/digest-preprints)
 [![DOI](https://data.caltech.edu/badge/243304809.svg)](https://data.caltech.edu/badge/latestdoi/243304809)
 
 digest-preprints
@@ -12,9 +12,9 @@ parse full-text html.
 This project is under active development. Please share your input via issues.
 
 
-# Envisioned Usage
+## Envisioned Usage
 
-## Routes
+### Routes
 
 1. Routes to that resolve a given doi, e.g.
 
@@ -55,7 +55,7 @@ https://{base_url}/{doi_prefix}/{doi_suffix}{preprint_server_versioning}
 {1}/pdf/iiif/{iiif_url_structure}
 ```
 
-## Responses
+### Responses
 
 Responses are given in two parts: metadata in 'meta' and the data payload in 'data'.
 
@@ -73,6 +73,6 @@ in there too.
 }
 ```
 
-# Testing
+## Testing
 
 All routes must have a test case implemented with the expected output.
