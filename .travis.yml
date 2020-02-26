@@ -1,0 +1,9 @@
+language: python
+cache:
+  directories:
+  - "$HOME/.cache/pip"
+os: linux
+install:
+  - pip install .
+script:
+- pytest -s -v --color=yes test/
