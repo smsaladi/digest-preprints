@@ -26,25 +26,25 @@ https://{base_url}/{doi_prefix}/{doi_suffix}{preprint_server_versioning}
 2. into json-parsable bits of a preprint
 
 ```text
-{1}/{metadata}
-{1}/{abstract}
-{1}/{body}
-{1}/{references}
-{1}/{figures}
+{1}/metadata
+{1}/abstract
+{1}/body
+{1}/references
+{1}/figures
 ```
 
 3. and even more granular bits
 
 ```text
-{1}/{paragraph}/{paragraphN}
-{1}/{section}/{sectionN}
+{1}/paragraph/{paragraphN}
+{1}/section/{sectionN}
 ```
 
 4. With formatting specifiers, where relevant, e.g.
 
 ```text
-{1}/{body}/{paragraphN}?html=1
-{1}/{body}/{figures}?format=url (default url=1) vs. {1}/{body}/{figures}?format=base64
+{1}/body/{paragraphN}?html=1
+{1}/body/{figures}?format=url (default url=1) vs. {1}/{body}/{figures}?format=base64
 ```
 
 5. Resolves to other interfaces (e.g. cantalope iiif server) where relevant, e.g.
